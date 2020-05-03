@@ -1,5 +1,8 @@
 def Pipeline_Message
 pipeline{
+environment {
+    registry = "IndustrialImage"
+    }
   agent any
   
   stages {
@@ -72,7 +75,7 @@ pipeline{
             {
                 script 
                 {
-                    dockerImage = docker.build IndustrialImage + ":$BUILD_NUMBER"
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 }
             }
         }
