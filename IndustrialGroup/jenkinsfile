@@ -1,7 +1,7 @@
 def Pipeline_Message
 pipeline{
 environment {
-    registry = "IndustrialImage"
+    registry = "industrialimage"
     }
   agent any
   
