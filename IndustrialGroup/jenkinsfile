@@ -89,7 +89,7 @@ environment {
                 sh"docker run -d -p 8087:8080 --name industrialcontainer $registry:$BUILD_NUMBER"
             }
         }
+      }
     }
   }
 }
-
