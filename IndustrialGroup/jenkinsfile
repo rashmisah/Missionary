@@ -86,7 +86,7 @@ environment {
             {
                 Pipeline_Message=env.STAGE_NAME
                 echo "Docker Container Run"
-                sh"docker run -d -p 8087:8080 --name fulldemoarnab -v /var/lib/tomcat8/conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml $registry:$BUILD_NUMBER"
+                sh"docker run -d -p 8087:8080 --name fulldemo $registry:$BUILD_NUMBER"
             }
         }
     }
