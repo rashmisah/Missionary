@@ -79,6 +79,7 @@ environment {
                 }
             }
         }
+    }
     stage('deployee the image in the tomcat server')
     {
         steps
