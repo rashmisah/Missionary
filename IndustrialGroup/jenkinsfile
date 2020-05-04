@@ -78,7 +78,8 @@ environment {
                     dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 }
             }
-        }stage('deployee the image in the tomcat server')
+        }
+    stage('deployee the image in the tomcat server')
     {
         steps
         {
