@@ -73,12 +73,11 @@ environment {
             }
             dir("/root/.jenkins/workspace/dockertest/IndustrialGroup/")
             {
-                script: 'docker-compose up' 
+                script: 'docker-compose up -d --build' 
             
             }
         }
-    }
-    
+      }
     }
   }
 
