@@ -68,7 +68,10 @@ environment {
         {         
             dir("/root/.jenkins/workspace/dockertest/IndustrialGroup/")
             {
-                script: 'docker-compose up -d --build'            
+                script
+                {
+                    sh 'docker-compose up -d --build'
+                }
             }
         }
       }
