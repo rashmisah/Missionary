@@ -1,0 +1,8 @@
+version:'1'
+
+services:
+ industrialcontainer:
+  image: industrialimage:$BUILD_NUMBER
+  build: .
+  ports
+   - '30080:8080'          
