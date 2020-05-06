@@ -65,16 +65,10 @@ environment {
     stage('Docker stage deployment') 
     {
         steps
-        {
-            script
-            {
-                Pipeline_Message=env.STAGE_NAME
-                echo "Docker stage deployment"
-            }
+        {         
             dir("/root/.jenkins/workspace/dockertest/IndustrialGroup/")
             {
-                script: 'docker-compose up -d --build' 
-            
+                script: 'docker-compose up -d --build'            
             }
         }
       }
